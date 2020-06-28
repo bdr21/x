@@ -1,0 +1,64 @@
+.values {
+    margin: 10px 0;
+    padding: 10rem 3rem;
+    background: linear-gradient(rgba(126, 213, 111, .7),rgba(40, 180, 133, .7)) ,
+        url(../img/irrigation-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    // justify-items: center;
+    // align-items: center;
+    gap: 30px;
+    border: $border;
+    // display: none;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(white,.8);
+        padding: 2.3rem;
+        border-radius: 3px;
+        box-shadow: 0 1.3rem 3.7rem rgba(black, .15);
+    
+    }
+    &__heading {
+        margin-bottom: 10px;
+    }
+    &__text {
+        text-align: center;
+    }
+    svg {
+        width: 3.5rem;
+        margin-bottom: 20px;
+        // fill: linear-gradient(rgba(128, 214, 113, 0.7),rgba(39, 180, 133, 0.702)) ;
+        // -webkit-background-clip: text;
+        // color: transparent;
+    }
+
+    @media (max-width : 991px) {
+        & {
+            // grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+            grid-template-rows: repeat(2,1fr);
+    
+            &__item {
+                grid-column: span 2 ;
+                grid-row: span 1;
+            }
+        }
+    
+    }
+    @media (max-width : 500px) {
+        & {
+            // grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+            grid-template-rows: repeat(4,1fr);
+    
+            &__item {
+                grid-column: span 4 ;
+                grid-row: span 1;
+            }
+        }
+    
+    }
+}

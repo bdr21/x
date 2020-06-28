@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+@import "../css/glide.core.min.css";
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "abstracts/mnl";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/banner";
+@import "components/button";
+@import "components/glide";
+@import "components/numbers-grid";
+@import "components/popup";
+@import "components/values";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/grid";
+@import "layout/mobile-nav";
+
+@import "pages/home";
+
+a {
+    background: transparent;
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.btn {
+    color: white;
+    background: linear-gradient(to right, rgba($color-primary,.8) , $color-secondary) ;
+    padding: 1rem;
+    border-radius: 30px;
+    width: 15rem;
+    text-align: center;
+    
+
+    &--animated {
+        text-transform: capitalize;
+
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+
+}
